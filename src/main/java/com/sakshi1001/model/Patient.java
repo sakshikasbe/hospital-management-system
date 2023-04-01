@@ -13,9 +13,11 @@ import lombok.*;
 @Entity
 public class Patient {
 
-    private @Id @GeneratedValue Long id;
+    private @Id
+    @GeneratedValue Long id;
     private String name;
     private String Disease;
+
 
     public Patient(String name, String disease) {
         this.name = name;
